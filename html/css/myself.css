@@ -1,0 +1,32 @@
+.s1{
+  border:0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-right: 10px;
+
+  margin-bottom: 0 !important;
+}
+
+.s2{
+  background-color: springgreen;
+  color: white;
+}
+
+.s3{
+  background-color: #474e5d;
+  color: white;
+}
+
+.container-fluid{
+  padding-bottom: 65px;
+  padding-top: 65px;
+}
+
+#search-button{
+  background-color: #0ce3ea;
+}
+
+.s5{
+  background-color: #2f2f2f;
+  color: white;
+}

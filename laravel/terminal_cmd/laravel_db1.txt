@@ -1,0 +1,454 @@
+  Exception trace:
+
+  1   PDOException::("SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists")
+      /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458
+
+  2   PDOStatement::execute()
+      /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458
+
+  Please use the argument -v to see more details.
+neebal@neebal-HP:~/Desktop/laravel/fnd-francis$ php artisan migrate
+
+   Illuminate\Database\QueryException  : SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists (SQL: create table `users` (`id` int unsigned not null auto_increment primary key, `name` varchar(191) not null, `email` varchar(191) not null, `password` varchar(191) not null, `remember_token` varchar(100) null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci')
+
+  at /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664
+    660|         // If an exception occurs when attempting to run a query, we'll format the error
+    661|         // message to include the bindings with SQL, which will make this exception a
+    662|         // lot more helpful to the developer instead of just the database's errors.
+    663|         catch (Exception $e) {
+  > 664|             throw new QueryException(
+    665|                 $query, $this->prepareBindings($bindings), $e
+    666|             );
+    667|         }
+    668| 
+
+  Exception trace:
+
+  1   PDOException::("SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists")
+      /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458
+
+  2   PDOStatement::execute()
+      /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458
+
+  Please use the argument -v to see more details.
+neebal@neebal-HP:~/Desktop/laravel/fnd-francis$ php artisan migrate
+Migration table created successfully.
+
+   Illuminate\Database\QueryException  : SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists (SQL: create table `users` (`id` int unsigned not null auto_increment primary key, `name` varchar(191) not null, `email` varchar(191) not null, `password` varchar(191) not null, `remember_token` varchar(100) null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci')
+
+  at /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664
+    660|         // If an exception occurs when attempting to run a query, we'll format the error
+    661|         // message to include the bindings with SQL, which will make this exception a
+    662|         // lot more helpful to the developer instead of just the database's errors.
+    663|         catch (Exception $e) {
+  > 664|             throw new QueryException(
+    665|                 $query, $this->prepareBindings($bindings), $e
+    666|             );
+    667|         }
+    668| 
+
+  Exception trace:
+
+  1   PDOException::("SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists")
+      /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458
+
+  2   PDOStatement::execute()
+      /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458
+
+  Please use the argument -v to see more details.
+neebal@neebal-HP:~/Desktop/laravel/fnd-francis$ php artisan migrate
+Migration table created successfully.
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table
+neebal@neebal-HP:~/Desktop/laravel/fnd-francis$ php artisan migrate
+Migration table created successfully.
+
+   Illuminate\Database\QueryException  : SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes (SQL: alter table `users` add unique `users_email_unique`(`email`))
+
+  at /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664
+    660|         // If an exception occurs when attempting to run a query, we'll format the error
+    661|         // message to include the bindings with SQL, which will make this exception a
+    662|         // lot more helpful to the developer instead of just the database's errors.
+    663|         catch (Exception $e) {
+  > 664|             throw new QueryException(
+    665|                 $query, $this->prepareBindings($bindings), $e
+    666|             );
+    667|         }
+    668| 
+
+  Exception trace:
+
+  1   PDOException::("SQLSTATE[42000]: Syntax error or access violation: 1071 Specified key was too long; max key length is 767 bytes")
+      /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458
+
+  2   PDOStatement::execute()
+      /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458
+
+  Please use the argument -v to see more details.
+neebal@neebal-HP:~/Desktop/laravel/fnd-francis$ php artisan migrate
+
+   Illuminate\Database\QueryException  : SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists (SQL: create table `users` (`id` int unsigned not null auto_increment primary key, `name` varchar(191) not null, `email` varchar(191) not null, `password` varchar(191) not null, `remember_token` varchar(100) null, `created_at` timestamp null, `updated_at` timestamp null) default character set utf8mb4 collate 'utf8mb4_unicode_ci')
+
+  at /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664
+    660|         // If an exception occurs when attempting to run a query, we'll format the error
+    661|         // message to include the bindings with SQL, which will make this exception a
+    662|         // lot more helpful to the developer instead of just the database's errors.
+    663|         catch (Exception $e) {
+  > 664|             throw new QueryException(
+    665|                 $query, $this->prepareBindings($bindings), $e
+    666|             );
+    667|         }
+    668| 
+
+  Exception trace:
+
+  1   PDOException::("SQLSTATE[42S01]: Base table or view already exists: 1050 Table 'users' already exists")
+      /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458
+
+  2   PDOStatement::execute()
+      /home/neebal/Desktop/laravel/fnd-francis/vendor/laravel/framework/src/Illuminate/Database/Connection.php:458
+
+  Please use the argument -v to see more details.
+neebal@neebal-HP:~/Desktop/laravel/fnd-francis$ php artisan migrate
+Migration table created successfully.
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table
+neebal@neebal-HP:~/Desktop/laravel/fnd-francis$ php artsian make:model Person -mCould not open input file: artsian
+neebal@neebal-HP:~/Desktop/laravel/fnd-francis$ php artisan make:model Person -m 
+Model created successfully.
+Created Migration: 2018_09_07_143850_create_people_table
+neebal@neebal-HP:~/Desktop/laravel/fnd-francis$ php artisan migrateMigrating: 2018_09_07_143850_create_people_table
+Migrated:  2018_09_07_143850_create_people_table
+neebal@neebal-HP:~/Desktop/laravel/fnd-francis$ php artisan tinker
+Psy Shell v0.9.7 (PHP 7.2.9-1+ubuntu14.04.1+deb.sury.org+1 — cli) by Justin Hileman
+>>> $p1 = new App\Person
+=> App\Person {#2872}
+>>> $p1 -> username = 'sagar'
+=> "sagar"
+>>> $p1 -> password = '123'
+=> "123"
+>>> $p1 -> gender = 'm'
+=> "m"
+>>> $p1 -> country = 'India'
+=> "India"
+>>> $p1 -> save()
+=> true
+>>> $p2 = new App\Person
+=> App\Person {#2873}
+>>> $p2 -> username = 'aditya'
+=> "aditya"
+>>> $p2 -> password = 'shano'
+=> "shano"
+>>> $p2 -> gender = 'f'
+=> "f"
+>>> $p2 -> country = 'USA'
+=> "USA"
+>>> $p2 -> save()
+=> true
+>>> $p3 = new App\Person
+=> App\Person {#2874}
+>>> $p3 -> username = 'maharaj'
+=> "maharaj"
+>>> $p3 -> password = 'sagar'
+=> "sagar"
+>>> $p3 -> gender = 'm'
+=> "m"
+>>> $p3 -> country = 'USA'
+=> "USA"
+>>> $p3 -> save()
+=> true
+>>> App\Task::all()
+PHP Fatal error:  Class 'App/Task' not found in Psy Shell code on line 1
+\>>> App\Task::all()
+PHP Fatal error:  Class 'App/Task' not found in Psy Shell code on line 1
+>>> App\Task::all()
+PHP Fatal error:  Class 'App/Task' not found in Psy Shell code on line 1
+>>> App\PErson::all()
+=> Illuminate\Database\Eloquent\Collection {#2885
+     all: [
+       App\Person {#2886
+         id: 1,
+         username: "sagar",
+         password: "123",
+         gender: "m",
+         country: "India",
+         created_at: "2018-09-07 15:11:59",
+         updated_at: "2018-09-07 15:11:59",
+       },
+       App\Person {#2887
+         id: 2,
+         username: "aditya",
+         password: "shano",
+         gender: "f",
+         country: "USA",
+         created_at: "2018-09-07 15:15:40",
+         updated_at: "2018-09-07 15:15:40",
+       },
+       App\Person {#2888
+         id: 3,
+         username: "maharaj",
+         password: "sagar",
+         gender: "m",
+         country: "USA",
+         created_at: "2018-09-07 15:16:48",
+         updated_at: "2018-09-07 15:16:48",
+       },
+     ],
+   }
+>>> App\Person::all()
+=> Illuminate\Database\Eloquent\Collection {#108
+     all: [
+       App\Person {#2890
+         id: 1,
+         username: "sagar",
+         password: "123",
+         gender: "m",
+         country: "India",
+         created_at: "2018-09-07 15:11:59",
+         updated_at: "2018-09-07 15:11:59",
+       },
+       App\Person {#2891
+         id: 2,
+         username: "aditya",
+         password: "shano",
+         gender: "f",
+         country: "USA",
+         created_at: "2018-09-07 15:15:40",
+         updated_at: "2018-09-07 15:15:40",
+       },
+       App\Person {#2892
+         id: 3,
+         username: "maharaj",
+         password: "sagar",
+         gender: "m",
+         country: "USA",
+         created_at: "2018-09-07 15:16:48",
+         updated_at: "2018-09-07 15:16:48",
+       },
+     ],
+   }
+>>> App\Person::all()
+=> Illuminate\Database\Eloquent\Collection {#2884
+     all: [
+       App\Person {#2876
+         id: 1,
+         username: "sagar",
+         password: "123",
+         gender: "m",
+         country: "India",
+         created_at: "2018-09-07 15:11:59",
+         updated_at: "2018-09-07 15:11:59",
+       },
+       App\Person {#2881
+         id: 2,
+         username: "aditya",
+         password: "shano",
+         gender: "f",
+         country: "USA",
+         created_at: "2018-09-07 15:15:40",
+         updated_at: "2018-09-07 15:15:40",
+       },
+       App\Person {#2879
+         id: 3,
+         username: "maharaj",
+         password: "sagar",
+         gender: "m",
+         country: "USA",
+         created_at: "2018-09-07 15:16:48",
+         updated_at: "2018-09-07 15:16:48",
+       },
+     ],
+   }
+>>> App\Person::where('gender','f')->get()
+=> Illuminate\Database\Eloquent\Collection {#2882
+     all: [
+       App\Person {#2891
+         id: 2,
+         username: "aditya",
+         password: "shano",
+         gender: "f",
+         country: "USA",
+         created_at: "2018-09-07 15:15:40",
+         updated_at: "2018-09-07 15:15:40",
+       },
+     ],
+   }
+>>> App\Person::latest
+PHP Fatal error:  Class constant 'App/Person::latest' not found in Psy Shell code on line 1
+>>> App\Person::latest()\
+... 
+=> Illuminate\Database\Eloquent\Builder {#2881}
+>>> App\Person::latest()
+=> Illuminate\Database\Eloquent\Builder {#2879}
+>>> App\Person::latest()-> get()
+=> Illuminate\Database\Eloquent\Collection {#2889
+     all: [
+       App\Person {#2887
+         id: 3,
+         username: "maharaj",
+         password: "sagar",
+         gender: "m",
+         country: "USA",
+         created_at: "2018-09-07 15:16:48",
+         updated_at: "2018-09-07 15:16:48",
+       },
+       App\Person {#2892
+         id: 2,
+         username: "aditya",
+         password: "shano",
+         gender: "f",
+         country: "USA",
+         created_at: "2018-09-07 15:15:40",
+         updated_at: "2018-09-07 15:15:40",
+       },
+       App\Person {#2878
+         id: 1,
+         username: "sagar",
+         password: "123",
+         gender: "m",
+         country: "India",
+         created_at: "2018-09-07 15:11:59",
+         updated_at: "2018-09-07 15:11:59",
+       },
+     ],
+   }
+>>> App\Person::all()
+=> Illuminate\Database\Eloquent\Collection {#2882
+     all: [
+       App\Person {#2881
+         id: 1,
+         username: "sagar",
+         password: "123",
+         gender: "m",
+         country: "India",
+         created_at: "2018-09-07 15:11:59",
+         updated_at: "2018-09-07 15:11:59",
+       },
+       App\Person {#2890
+         id: 2,
+         username: "aditya",
+         password: "shano",
+         gender: "f",
+         country: "USA",
+         created_at: "2018-09-07 15:15:40",
+         updated_at: "2018-09-07 15:15:40",
+       },
+       App\Person {#2885
+         id: 3,
+         username: "maharaj",
+         password: "sagar",
+         gender: "m",
+         country: "USA",
+         created_at: "2018-09-07 15:16:48",
+         updated_at: "2018-09-07 15:16:48",
+       },
+     ],
+   }
+>>> App\Person::all(['username','password',''gender'])
+PHP Parse error: Syntax error, unexpected T_STRING, expecting ',' or ')' or ']' on line 1
+>>> App\Person::all(['username','password','gender'])
+=> Illuminate\Database\Eloquent\Collection {#2878
+     all: [
+       App\Person {#2884
+         username: "sagar",
+         password: "123",
+         gender: "m",
+       },
+       App\Person {#2888
+         username: "aditya",
+         password: "shano",
+         gender: "f",
+       },
+       App\Person {#108
+         username: "maharaj",
+         password: "sagar",
+         gender: "m",
+       },
+     ],
+   }
+>>> App\Person::where('id','2')->get()
+=> Illuminate\Database\Eloquent\Collection {#2886
+     all: [
+       App\Person {#2890
+         id: 2,
+         username: "aditya",
+         password: "shano",
+         gender: "f",
+         country: "USA",
+         created_at: "2018-09-07 15:15:40",
+         updated_at: "2018-09-07 15:15:40",
+       },
+     ],
+   }
+>>> App\Person::find(2)
+=> App\Person {#2870
+     id: 2,
+     username: "aditya",
+     password: "shano",
+     gender: "f",
+     country: "USA",
+     created_at: "2018-09-07 15:15:40",
+     updated_at: "2018-09-07 15:15:40",
+   }
+>>> $u -> App\Person::find(2)
+PHP Parse error: Syntax error, unexpected T_NS_SEPARATOR on line 1
+>>> $u = App\Person::find(2)
+=> App\Person {#108
+     id: 2,
+     username: "aditya",
+     password: "shano",
+     gender: "f",
+     country: "USA",
+     created_at: "2018-09-07 15:15:40",
+     updated_at: "2018-09-07 15:15:40",
+   }
+>>> $u -> username = 'sanju'
+=> "sanju"
+>>> $u -> save()
+=> true
+>>> exit()
+Exit:  Goodbye
+neebal@neebal-HP:~/Desktop/laravel/fnd-francis$ php artisan tinker
+Psy Shell v0.9.7 (PHP 7.2.9-1+ubuntu14.04.1+deb.sury.org+1 — cli) by Justin Hileman
+>>> App\Person::where('username','sagar') -> where('password','123') -
+... > get()
+PHP Parse error: Syntax error, unexpected '>' on line 2
+>>> App\Person::where('username','sagar') -> where('password','123') -> get()
+=> Illuminate\Database\Eloquent\Collection {#2873
+     all: [
+       App\Person {#2877
+         id: 1,
+         username: "sagar",
+         password: "123",
+         gender: "m",
+         country: "India",
+         created_at: "2018-09-07 15:11:59",
+         updated_at: "2018-09-07 15:11:59",
+       },
+     ],
+   }
+>>> App\Person::where('username','sagar') -> where('password','1234') -> get()
+=> Illuminate\Database\Eloquent\Collection {#2876
+     all: [],
+   }
+>>> App\Person::where('username','sagar') :: where('password','1234') -> get()
+PHP Deprecated:  Non-static method Illuminate/Database/Eloquent/Builder::where() should not be called statically in /home/neebal/Desktop/laravel/fnd-franciseval()'d code on line 1
+>>> App\Person::where('username','sagar') -> where('password','123') -> get()
+=> Illuminate\Database\Eloquent\Collection {#2880
+     all: [
+       App\Person {#2878
+         id: 1,
+         username: "sagar",
+         password: "123",
+         gender: "m",
+         country: "India",
+         created_at: "2018-09-07 15:11:59",
+         updated_at: "2018-09-07 15:11:59",
+       },
+     ],
+   }
+

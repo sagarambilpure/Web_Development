@@ -1,0 +1,27 @@
+p {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
+  word-spacing: 10;
+  letter-spacing: 3;
+}
+
+.green{
+  color: green
+}
+
+.done{
+  text-decoration: line-through;
+}
+
+#fop,#fip{
+  display: inline;
+}
+
+#firstPara{
+  max-width: 400px;
+  /*max-width gives a width as well as adjust the width
+  to the browser width on different window sizes*/
+  word-wrap: break-word;
+}

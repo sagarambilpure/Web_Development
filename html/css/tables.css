@@ -1,0 +1,32 @@
+table,td,th {
+  border: 2px solid blue;
+}
+
+table{
+  border-collapse: collapse;
+  width:50%;
+}
+
+td{
+  padding: 15px;
+}
+
+th{
+  vertical-align: bottom;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.styleth{
+  background-color: green;
+  color: white;
+}
+
+.row:hover{
+  background-color: red;
+  color: white;
+}
+
+.row:nth-child(even){
+background-color: grey;
+}
